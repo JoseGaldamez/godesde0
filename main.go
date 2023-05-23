@@ -3,13 +3,23 @@ package main
 import (
 	"fmt"
 
-	"github.com/JoseGaldamez/godesde0/variables"
+	"runtime"
 )
 
 func main() {
-	variables.ShowIntegers()
-	variables.ShowRest()
+	if os := runtime.GOOS; os == "windows" || os == "darwin" {
+		fmt.Println("El sistema operativo es Windows")
+	} else {
+		fmt.Println("El sistema operativo no es Windows, es", os)
+	}
 
-	state, text := variables.ConvertToText(16485)
-	fmt.Println(state, text)
+	switch os := runtime.GOOS; os {
+	case "windows":
+		fmt.Println("El sistema operativo es Windows")
+	case "darwin":
+		fmt.Println("El sistema operativo es Mac")
+	default:
+		fmt.Printf("El sistema operativo es %s \n", os)
+	}
+
 }
