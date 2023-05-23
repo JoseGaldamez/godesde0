@@ -1,25 +1,25 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/JoseGaldamez/godesde0/condicionales"
-	"github.com/JoseGaldamez/godesde0/ejecicios"
-	"github.com/JoseGaldamez/godesde0/iteraciones"
+	"github.com/JoseGaldamez/godesde0/files"
 )
 
 func main() {
 
-	condicionales.IfCondicionales()
-	condicionales.SwitchCondicionales()
+	// condicionales.IfCondicionales()
+	// condicionales.SwitchCondicionales()
 
-	number, text := ejecicios.CheckIs100("fffsad")
-	fmt.Println(number, text)
+	// number, text := ejecicios.CheckIs100("fffsad")
+	// fmt.Println(number, text)
 
-	//	keyboard.InsertNumber()
+	// //	keyboard.InsertNumber()
 
-	iteraciones.ForExample()
+	// iteraciones.ForExample()
 
-	ejecicios.ShowMultiplyTable()
+	// ejecicios.ShowMultiplyTable()
+
+	// files.AddMultiplyTable()
+
+	files.ReadMyFile("./files/txt/tables.txt")
 
 }

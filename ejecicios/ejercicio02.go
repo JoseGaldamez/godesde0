@@ -7,7 +7,9 @@ import (
 	"strconv"
 )
 
-func ShowMultiplyTable() {
+func ShowMultiplyTable() (string, int) {
+
+	var text string
 
 	number := 0
 	var err error
@@ -29,13 +31,13 @@ func ShowMultiplyTable() {
 		os.Exit(0)
 	}
 
-	fmt.Println("\n\n[!] Tabla de multiplicar del número: ", number)
-	fmt.Println("====================================")
+	text += fmt.Sprintln("\n\n[!] Tabla de multiplicar del número: ", number)
+	text += fmt.Sprintln("====================================")
 	fmt.Println()
 	for i := 1; i <= 10; i++ {
-		fmt.Printf("%d x %d = %d \n", number, i, (number * i))
+		text += fmt.Sprintf("%d x %d = %d \n", number, i, (number * i))
 	}
 
-	fmt.Println("\n\n==== Saliendo del sistema ====")
+	return text, number
 
 }
