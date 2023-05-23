@@ -4,6 +4,8 @@ import (
 	"fmt"
 
 	"runtime"
+
+	"github.com/JoseGaldamez/godesde0/ejecicios"
 )
 
 func main() {
@@ -21,5 +23,8 @@ func main() {
 	default:
 		fmt.Printf("El sistema operativo es %s \n", os)
 	}
+
+	number, text := ejecicios.CheckIs100("500")
+	fmt.Println(number, text)
 
 }
