@@ -5,6 +5,7 @@ import (
 
 	"github.com/JoseGaldamez/godesde0/condicionales"
 	"github.com/JoseGaldamez/godesde0/ejecicios"
+	"github.com/JoseGaldamez/godesde0/iteraciones"
 )
 
 func main() {
@@ -12,7 +13,11 @@ func main() {
 	condicionales.IfCondicionales()
 	condicionales.SwitchCondicionales()
 
-	number, text := ejecicios.CheckIs100("500")
+	number, text := ejecicios.CheckIs100("fffsad")
 	fmt.Println(number, text)
+
+	//	keyboard.InsertNumber()
+
+	iteraciones.ForExample()
 
 }
