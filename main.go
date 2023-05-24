@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/JoseGaldamez/godesde0/files"
+	"github.com/JoseGaldamez/godesde0/maps"
 )
 
 func main() {
@@ -20,6 +20,15 @@ func main() {
 
 	// files.AddMultiplyTable()
 
-	files.ReadMyFile("./files/txt/tables.txt")
+	// files.ReadMyFile("./files/txt/tables.txt")
+
+	// functions.CallClosure()
+
+	// functions.Exponential(1)
+
+	// arrays.ShowArrays()
+	// arrays.CapacityAndLength()
+
+	maps.ShowMaps()
 
 }

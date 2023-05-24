@@ -3,7 +3,7 @@ package files
 import (
 	"bufio"
 	"fmt"
-	"io/ioutil"
+	"io/ioutil" // this is deprecated
 	"os"
 
 	"github.com/JoseGaldamez/godesde0/ejecicios"
