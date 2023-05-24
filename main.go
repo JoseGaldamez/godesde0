@@ -1,7 +1,9 @@
 package main
 
 import (
-	"github.com/JoseGaldamez/godesde0/deferPanic"
+	"fmt"
+
+	"github.com/JoseGaldamez/godesde0/channels"
 )
 
 func main() {
@@ -40,6 +42,21 @@ func main() {
 	// ejerciciosinterfaces.HumansBreathing(pedro)
 	// ejerciciosinterfaces.HumansBreathing(maria)
 
-	deferPanic.DemoPanic()
+	// deferPanic.DemoPanic()
+
+	// go gorutines.MySlowName("Jose")
+
+	// fmt.Println("Estoy aqui")
+	// var x string
+	// fmt.Scanln(&x)
+
+	channel01 := make(chan bool)
+	go channels.MySlowNameWithChannel("Jose", channel01)
+
+	state := <-channel01
+
+	if state {
+		fmt.Println("Terminó la gorutina")
+	}
 
 }
