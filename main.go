@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/JoseGaldamez/godesde0/channels"
+	"github.com/JoseGaldamez/godesde0/middleware"
 )
 
 func main() {
@@ -50,13 +48,16 @@ func main() {
 	// var x string
 	// fmt.Scanln(&x)
 
-	channel01 := make(chan bool)
-	go channels.MySlowNameWithChannel("Jose", channel01)
+	// channel01 := make(chan bool)
+	// go channels.MySlowNameWithChannel("Jose", channel01)
 
-	state := <-channel01
+	// state := <-channel01
 
-	if state {
-		fmt.Println("Terminó la gorutina")
-	}
+	// if state {
+	// 	fmt.Println("Terminó la gorutina")
+	// }
 
+	// webserver.MyWebServer()
+
+	middleware.MyMiddleare()
 }
