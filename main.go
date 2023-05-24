@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/JoseGaldamez/godesde0/users"
+	"github.com/JoseGaldamez/godesde0/deferPanic"
 )
 
 func main() {
@@ -31,6 +31,15 @@ func main() {
 
 	// maps.ShowMaps()
 
-	users.AltaUsuario()
+	// users.AltaUsuario()
+
+	// pedro := new(models.Man)
+	// maria := new(models.Woman)
+
+	// // HumansBreathing espera un humano, y tanto Pedro como Maria son humanos
+	// ejerciciosinterfaces.HumansBreathing(pedro)
+	// ejerciciosinterfaces.HumansBreathing(maria)
+
+	deferPanic.DemosDefer()
 
 }
