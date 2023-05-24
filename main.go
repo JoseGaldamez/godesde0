@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/JoseGaldamez/godesde0/maps"
+	"github.com/JoseGaldamez/godesde0/users"
 )
 
 func main() {
@@ -29,6 +29,8 @@ func main() {
 	// arrays.ShowArrays()
 	// arrays.CapacityAndLength()
 
-	maps.ShowMaps()
+	// maps.ShowMaps()
+
+	users.AltaUsuario()
 
 }
