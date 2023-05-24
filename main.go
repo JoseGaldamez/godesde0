@@ -12,7 +12,7 @@ func main() {
 	// number, text := ejecicios.CheckIs100("fffsad")
 	// fmt.Println(number, text)
 
-	// //	keyboard.InsertNumber()
+	// keyboard.InsertNumber()
 
 	// iteraciones.ForExample()
 
@@ -36,10 +36,10 @@ func main() {
 	// pedro := new(models.Man)
 	// maria := new(models.Woman)
 
-	// // HumansBreathing espera un humano, y tanto Pedro como Maria son humanos
+	// HumansBreathing espera un humano, y tanto Pedro como Maria son humanos
 	// ejerciciosinterfaces.HumansBreathing(pedro)
 	// ejerciciosinterfaces.HumansBreathing(maria)
 
-	deferPanic.DemosDefer()
+	deferPanic.DemoPanic()
 
 }
